@@ -3,69 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Lojinha de Unidades</h1>
-
-    <table>
-
-        <thead>
-            <tr>
-                <th>Imagem</th>
-                <th>Produto</th>
-                <th>Preço Unitário</th>
-                <th>Quantidade</th>
-                <th>Total</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="img/produto_1.jpg" alt="Celular" width="200"></td>
-                <td>
-                    <div>Celular Top</div>
-                    <div>C´d: 123456</div>
-                    <div>Cor: Azul</div>
-                </td>
-                <td>1000</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-
-            
-            <tr>
-                <td><img src="img/produto_2.png" alt="Notebook" width="200"></td>
-                <td>
-                    <div>Notebook Top</div>
-                    <div>Cód: 123456</div>
-                    <div>Cor: Preto</div>
-                </td>
-                <td>1000</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-
-            <tr>
-                <td><img src="img/produto_3.png" alt="Smart tv" width="200"></td>
-                <td>
-                    <div>Smart tv Top</div>
-                    <div>C´d: 123456</div>
-                    <div>Cor: Preto</div>
-                </td>
-                <td>1000</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
+    <title>Loja</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
 
 
-        </tbody>
 
-    </table>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <body>
+    <div class="container">
+        
+        <h1>
+            <i id="cifrao" class="bi bi-currency-dollar"></i>
+             Lojinha de Unidades
+        </h1>
+
+        <table class="table table-hover table-dark">
+
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Produto</th>
+                    <th>Preço Unitário</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="img/produto_1.jpg" alt="Celular" width="200"></td>
+                    <td>
+                        <div>Celular Top</div>
+                        <div><span class="produto-item">cod:</span> 1265168</div>
+                        <div><span class="produto-item">Cor:</span> Azul</div>
+                    </td>
+                    <td>1000</td>
+                    <td>
+                        <span class="badge badge-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge badge-success"><i class="bi bi-plus-lg"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
+
+                
+                <tr>
+                    <td><img src="img/produto_2.png" alt="Notebook" width="200"></td>
+                    <td>
+                        <div>Notebook Top</div>
+                        <div><span class="produto-item">cod:</span> 1299835</div>
+                        <div><span class="produto-item">cod:</span> Preto</div>
+                    </td>
+                    <td>2000</td>
+                    <td>
+                        <span class="badge badge-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge badge-success"><i class="bi bi-plus-lg"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/produto_3.png" alt="Smart tv" width="200"></td>
+                    <td>
+                        <div>Smart tv Top</div>
+                        <div><span class="produto-item">cod:</span> 1265741</div>
+                        <div><span class="produto-item">cod:</span> Preto</div>
+                    </td>
+                    <td>3000</td>
+                    <td>
+                        <span class="badge badge-danger"><i class="bi bi-dash"></i></span>
+                        0
+                        <span class="badge badge-success"><i class="bi bi-plus-lg"></i></span>
+                    </td>
+                    <td>0</td>
+                </tr>
 
 
-    <footer>
-        <span>Subtotal: R$ 0</span>
-    </footer>
+            </tbody>
+
+        </table>
+
+
+        <footer class="text-center">
+            <span> 
+                <i class="bi bi-cart-fill"></i>Subtotal: R$ 0</span>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
