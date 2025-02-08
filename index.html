@@ -42,9 +42,9 @@
                     </td>
                     <td id="valor_1">1000</td>
                     <td>
-                        <span class="badge badge-danger" onclick="retirar(1)"><i class="bi bi-dash"></i></span>
+                        <span class="badge badge-danger" onclick="alterarQtd(1, '-' )"><i class="bi bi-dash"></i></span>
                         <span id="qtd_1">0</span>
-                        <span class="badge badge-success" onclick="adicionar(1)"><i class="bi bi-plus-lg"></i></span>
+                        <span class="badge badge-success" onclick="alterarQtd(1, '+')"><i class="bi bi-plus-lg"></i></span>
                     </td>
                     <td id="total_1">0</td>
                 </tr>
@@ -59,9 +59,9 @@
                     </td>
                     <td id="valor_2">2000</td>
                     <td>
-                        <span class="badge badge-danger" onclick="retirar(2)"><i class="bi bi-dash"></i></span>
+                        <span class="badge badge-danger" onclick="alterarQtd(2, '-')"><i class="bi bi-dash"></i></span>
                         <span id="qtd_2">0</span>
-                        <span class="badge badge-success" onclick="adicionar(2)"><i class="bi bi-plus-lg"></i></span>
+                        <span class="badge badge-success" onclick="alterarQtd(2, '+')"><i class="bi bi-plus-lg"></i></span>
                     </td>
                     <td id="total_2">0</td>
                 </tr>
@@ -75,9 +75,9 @@
                     </td>
                     <td id="valor_3">3000</td>
                     <td>
-                        <span class="badge badge-danger" onclick="retirar(3)"><i class="bi bi-dash"></i></span>
+                        <span class="badge badge-danger" onclick="alterarQtd(3, '-')"><i class="bi bi-dash"></i></span>
                         <span id="qtd_3">0</span>
-                        <span class="badge badge-success" onclick="adicionar(3)"><i class="bi bi-plus-lg"></i></span>
+                        <span class="badge badge-success" onclick="alterarQtd(3, '+')"><i class="bi bi-plus-lg"></i></span>
                     </td>
                     <td id="total_3">0</td>
                 </tr>
@@ -90,7 +90,7 @@
 
         <footer class="text-center">
             <span> 
-                <i class="bi bi-cart-fill"></i>Subtotal: R$ 0</span>
+                <i class="bi bi-cart-fill"></i>Subtotal: R$ <span id="subtotal">0</span></span>
         </footer>
 
     </div>
