@@ -15,11 +15,10 @@ function soma(){
 
     let soma = 0
     
-    soma = soma + Number(document.getElementById('total_1').innerHTML)
+    for(let i = 1; i< 4 ; i++){
 
-    soma = soma + Number(document.getElementById('total_2').innerHTML)
-
-    soma = soma + Number(document.getElementById('total_3').innerHTML)
-
+        soma +=  Number(document.getElementById('total_'+ i).innerHTML)
+    }
     document.getElementById('subtotal').innerHTML = soma
+        
 }
